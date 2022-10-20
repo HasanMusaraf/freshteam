@@ -1,3 +1,6 @@
+// Side Navs
+
+
 .side-nav {
     position: fixed;
     height: 100%;
@@ -6,17 +9,44 @@
     background: #12344D;
     z-index: 1;
     float: left;
+
 }
 
 
-.side-nav-tabs {
+.side-nav-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 54px;
-    border-bottom:#41637C 1px solid;
+    border-bottom: #41637C 1px solid;
 
 }
+
+
+.candidates {
+    position: absolute;
+    top: 66px;
+    left: 10px;
+    // background: #7052CC;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.candidates .icon {
+    width: 22.2px;
+    fill: #ffffff;
+}
+
+.active-icon{
+    background: #7052CC;
+}
+
+// Top Navs
+
 
 .topNav {
     position: sticky;
@@ -28,7 +58,7 @@
     border-radius: 0px;
     display: flex;
     align-items: center;
-    
+
 }
 
 .top-nav-tabs {
@@ -58,7 +88,7 @@
 // Footer
 
 
-footer{
+footer {
     position: fixed;
     bottom: 0%;
     height: 28px;
@@ -66,10 +96,10 @@ footer{
 
 }
 
-footer p{
+footer p {
     background-color: #F5F7F9;
     align-items: center;
     justify-content: center;
-    display:flex;
-
+    display: flex;
+    color: #607787;
 }
