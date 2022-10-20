@@ -8,8 +8,13 @@
 
 body{
     background: #E5E5E5;
-    // min-height: 100%;
 }
+
+@mixin content-wrapper {
+    position: absolute;
+    left: 60px;
+}
+
 
 
 @import "sub-styles/home.scss";
