@@ -6,6 +6,9 @@ export default Component.extend({
     init() {
         this._super(...arguments);
         this.getUser = this.get('store').peekAll('user'); 
+        
 
     }
+
+    
 });

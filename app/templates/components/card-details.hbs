@@ -1,3 +1,17 @@
 {{!-- {{yield}} --}}
 
-<h3>{{user.last_name}}</h3>
+
+<div class="userCard">
+    <div class="profile">
+        {{#if user.image}}
+        <img src="{{user.image}}" alt="user">
+        {{else}}
+        <div class="profile-icon">
+            <p>{{profile_char}}</p>
+        </div>
+        {{/if}}
+    </div>
+    <p class="fullName">{{user.first_name}} {{ user.last_name}}</p>
+    <p class="email">{{user.email}}</p>
+</div>
+

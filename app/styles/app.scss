@@ -1,5 +1,7 @@
 @import "ember-bootstrap/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,11 +10,14 @@
 
 body{
     background: #E5E5E5;
+    font-family: 'Roboto';
 }
 
 @mixin content-wrapper {
     position: absolute;
-    left: 60px;
+    top: 131px;
+    left: 84px;
+    
 }
 
 
@@ -22,3 +27,4 @@ body{
 @import "sub-styles/nav.scss";
 
 
+@import "sub-styles/userCard.scss";

@@ -1,5 +1,5 @@
 
-import LSSerializer from 'freshteam/serializers/ls-serializer';
+import LSSerializer from 'freshteam/mirage/serializers/ls-serializer';
 
 export default LSSerializer.extend({
 });

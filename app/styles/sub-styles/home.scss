@@ -1,8 +1,4 @@
-.home{
-    min-height: 2000px;
-    width: 300px;
+.wrapper {
+    @include content-wrapper;
 }
 
-.wrapper{
-@include content-wrapper;
-}

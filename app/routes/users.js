@@ -7,7 +7,8 @@ export default Route.extend({
       last_name: 'Kaja',
       email: 'kajavamsi@gmail.com',
       team: 'Freshteam',
-      joiningDate: '2020-07-22'
+      joiningDate: '2020-07-22',
+      image:'https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png'
     }, {
       first_name: 'Koushi',
       last_name: 'R',
@@ -31,14 +32,18 @@ export default Route.extend({
         last_name: 'S',
         email: 'hasan.s@gmail.com',
         team: 'Freshteam',
-        joiningDate: '2022-06-26'
+        joiningDate: '2022-06-26',
+        image:'https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png'
+
 
       }, {
         first_name: 'Musaraf',
         last_name: 'S',
         email: 'musaraf.s@gmail.com',
         team: 'Freshteam',
-        joiningDate: '2022-06-27'
+        joiningDate: '2022-06-27',
+        image:'https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png'
+
       }, {
         first_name: 'Asha',
         last_name: 'S',
@@ -103,8 +108,8 @@ export default Route.extend({
       userRecord.save();
     });
 
-  },
 
+  },
 
 });
 
