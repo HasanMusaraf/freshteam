@@ -1,10 +1,8 @@
 <div class="userWrapper ">
 
-    {{#each getUser as |user|}}
-
-    <CardDetails @user={{user}} />
-
-    {{/each}}
-
+  {{#each getUser as |user|}}
+    {{#card-details user=user}}
+    {{/card-details}}
+  {{/each}}
 
 </div>

@@ -2,22 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background: #E5E5E5;
-    font-family: 'Roboto';
+body {
+  background: #E5E5E5 !important;
+  font-family: 'Roboto' !important;
 }
 
 @mixin content-wrapper {
-    position: absolute;
-    top: 131px;
-    left: 84px;
-    
+  position: absolute;
+  top: 131px;
+  left: 84px;
+
 }
 
 
@@ -28,3 +28,5 @@ body{
 
 
 @import "sub-styles/userCard.scss";
+
+@import "ember-bootstrap/bootstrap";
