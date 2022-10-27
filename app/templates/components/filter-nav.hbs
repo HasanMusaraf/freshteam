@@ -1,0 +1,14 @@
+<div class="nav-3">
+  <div class="filter-by" {{action "touchEnd" }}>
+    <span>Filter by</span>
+    <p>All Employees</p>
+    <img src="/assets/images/accordion-open.svg" alt="img" class='open {{if clicked "turn"}}'>
+  </div>
+</div>
+
+
+{{filter-by isShowingBody=isShowingBody}}
+
+
+
+{{!-- todo add dynamic class inside svg-jar component --}}
