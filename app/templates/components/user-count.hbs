@@ -1,10 +1,10 @@
-<h1>user count: {{ getUser.length}}</h1>
+{{!--<h1>user count: {{ getUser.length}}</h1>--}}
 
 <div class="avatar-wrapper">
 {{#each getUser as |user|}}
 
-{{#user-avatar user=user}}
-{{/user-avatar}}
+{{#user-card user=user}}
+{{/user-card}}
 
 {{/each}}
 </div>
