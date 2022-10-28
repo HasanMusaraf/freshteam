@@ -10,9 +10,14 @@ body{
     background: #E5E5E5;
 }
 
+@mixin content-wrapper {
+  position: absolute;
+  left: 80px;
+}
 
 @import "sub-styles/home.scss";
 
 @import "sub-styles/nav.scss";
 
 
+@import "sub-styles/users.scss";

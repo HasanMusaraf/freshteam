@@ -1,0 +1,32 @@
+{{!-- NavBar --}}
+
+<header class="side-nav">
+    <div class="side-nav-tabs">
+        {{svg-jar "Shape" class="side-nav-icon" alt="img"}}
+    </div>
+
+     <div class="candidates {{if isUserRoute 'active-icon'}}">
+        {{#link-to 'users'}} {{svg-jar "candidates" class="icon" }}
+        {{/link-to}}
+    </div>
+</header>
+
+
+
+<header class="topNav ">
+    <div class="top-nav-tabs">
+        <img src="/assets/images/favicon.ico" class="top-nav-icon" alt="img">
+        <p>Talent Center</p>
+    </div>
+</header>
+
+
+{{outlet}}
+
+{{!-- Footer --}}
+
+<footer>
+    <p>HR Software by Freshworks &nbsp;  |  &nbsp; Knowledge Base</p>
+</footer>
+
+

@@ -1,3 +1,4 @@
+// Side Nav
 .side-nav {
   position: fixed;
   height: 100%;
@@ -17,6 +18,29 @@
   border-bottom: #41637C 1px solid;
 
 }
+
+.candidates {
+  position: absolute;
+  top: 66px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.candidates .icon {
+  width: 22.2px;
+  fill: #ffffff;
+}
+
+.active-icon{
+  background: #7052CC;
+}
+
+// Top Nav
 
 .topNav {
   position: fixed;

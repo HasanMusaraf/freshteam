@@ -1,0 +1,34 @@
+.subNav {
+  position: fixed;
+  top: 54px;
+  background: #F5F7F9;
+  height: 54px;
+  width: 100%;
+  border-radius: 0px;
+  border-bottom: 1px solid #cfd7df;
+}
+
+.subNav-tabs{
+  position: absolute;
+  left: 84px;
+  display: flex;
+  align-items: center;
+  height: 54px;
+
+}
+
+.subNav-tabs p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 15px;
+  color: #12344D;
+  margin-top: auto;
+  
+}
+
+.wrapper-users{
+  @include content-wrapper;
+  top: 120px;
+  z-index:-1;
+  }
