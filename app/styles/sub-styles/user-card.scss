@@ -35,6 +35,11 @@
 }
 
 
+.userWrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
 .userCard p {
   margin: 0;
