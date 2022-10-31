@@ -12,7 +12,7 @@ body {
 
 @mixin content-wrapper {
   position: absolute;
-  left: 80px;
+  left: 85px;
 }
 
 @import "sub-styles/home.scss";
@@ -24,3 +24,6 @@ body {
 
 
 @import "sub-styles/user-card.scss";
+
+
+@import "sub-styles/filter-nav.scss";

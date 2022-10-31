@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import computed from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -7,7 +6,6 @@ export default Component.extend({
 init() {
     this._super(...arguments);
     this.userCount();
-    //console.log();
 },
 
 

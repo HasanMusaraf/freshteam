@@ -1,0 +1,10 @@
+{{#if isShowingBody}}
+  <div class="filter-table">
+    <ul>
+      <li>Teams</li>
+      {{#each myTeamMembers as |myTeam|}}
+        <li {{action "isFilter" myTeam.team}}>{{myTeam.team}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}

@@ -1,0 +1,76 @@
+// Nav-3 section 
+
+.filter-by {
+  display: flex;
+  height: 20px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.filter-by span {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.08px;
+  color: #7B8E9F;
+  padding-right: 7px;
+
+}
+
+.filter-by p {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.08px;
+  color: #12344D;
+  padding-right: 5.08px;
+
+}
+
+
+.filter-by .open {
+  margin-top: 7px;
+  width: 14px;
+  height: 8px;
+}
+
+.turn {
+  transform: rotate(180deg);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+// Filter Table
+
+.filter-table {
+  background-color: #ffffff;
+  width: 150px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+}
+
+.filter-table ul {
+  list-style-type: none;
+}
+
+.filter-table ul li:nth-child(1) {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: default;
+  position: relative;
+  right: 10px;
+}
+
+.filter-table ul li {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #12344D;
+  cursor: pointer;
+}
+
+.filter-table ul li:not(:nth-child(1)):hover {
+  color: #2752b0;
+}

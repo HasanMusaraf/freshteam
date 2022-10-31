@@ -1,20 +1,19 @@
 .subNav {
   position: fixed;
   top: 54px;
-  background: #F5F7F9;
+  background: #f5f7f9;
   height: 54px;
   width: 100%;
   border-radius: 0px;
   border-bottom: 1px solid #cfd7df;
 }
 
-.subNav-tabs{
+.subNav-tabs {
   position: absolute;
   left: 84px;
   display: flex;
   align-items: center;
   height: 54px;
-
 }
 
 .subNav-tabs p {
@@ -22,14 +21,13 @@
   font-weight: 600;
   font-size: 14px;
   padding-left: 15px;
-  color: #12344D;
+  color: #12344d;
   margin-top: auto;
-  
 }
 
-.wrapper-users{
+.wrapper-users {
   @include content-wrapper;
-  top: 140px;
-  z-index:-1;
-  
-  }
+  top: 120px;
+  z-index: -1;
+  display: flex;
+}
