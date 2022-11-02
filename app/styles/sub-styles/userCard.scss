@@ -1,0 +1,63 @@
+.profile-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  opacity: .9;
+}
+
+.profile-icon p {
+  font-size: 35px;
+  border-radius: 50%;
+
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+
+}
+
+.userCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 265px;
+  height: 265px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin: 0 18px 18px 0;
+}
+
+
+.userWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.userCard p {
+  margin: 0;
+}
+
+.userCard .fullName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #27313A;
+}
+
+.userCard .email {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #576C7D;
+}

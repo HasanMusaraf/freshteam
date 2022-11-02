@@ -1,0 +1,12 @@
+{{#if isShowingBody}}
+<div class="filter-table">
+  <ul>
+    <li>Team</li>
+    <li >Business</li>
+    <li {{action "isFilter" 'Freshsales'}}>Fresh Sales</li>
+    <li {{action "isFilter" 'Freshteam'}}>Fresh Team</li>
+    <li {{action "isFilter" 'Freshchat'}}>Fresh Chat</li>
+    <li {{action "isFilter" 'Freshdesk'}}>Fresh Desk</li>
+  </ul>
+</div>
+{{/if}}

@@ -1,18 +1,23 @@
 @import "ember-bootstrap/bootstrap";
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background: #E5E5E5;
+body {
+  background: #E5E5E5 !important;
+  font-family: 'Roboto' !important;
 }
 
 @mixin content-wrapper {
-    position: absolute;
-    left: 60px;
+  position: absolute;
+  top: 131px;
+  left: 84px;
+
 }
 
 
@@ -21,4 +26,9 @@ body{
 
 @import "sub-styles/nav.scss";
 
+@import "sub-styles/userCard.scss";
 
+@import "sub-styles/users.scss";
+
+
+@import "ember-bootstrap/bootstrap";

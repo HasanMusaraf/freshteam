@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "description": "Small description for freshteam goes here",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasanMusaraf/freshteam.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -24,7 +26,6 @@
     "broccoli": "^3.5.2",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
-    "ember-bootstrap": "^2.8.1",
     "ember-cli": "~3.4.4",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^6.16.0",
@@ -34,8 +35,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",
     "ember-cli-inject-live-reload": "^1.8.2",
     "ember-cli-mirage": "^2.4.0",
-    "ember-cli-qunit": "^4.3.2",
-    "ember-cli-sass": "^10.0.1",
+    "ember-cli-sass": "10.0.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-template-lint": "^1.0.0-beta.1",
     "ember-cli-uglify": "^2.1.0",
@@ -43,9 +43,11 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-qunit": "^3.4.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.4.0",
-    "ember-svg-jar": "^2.3.3",
+    "ember-string-fns": "^1.4.0",
+    "ember-svg-jar": "2.3.3",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
@@ -54,5 +56,13 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
-  }
+  },
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "ember-bootstrap": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/HasanMusaraf/freshteam/issues"
+  },
+  "homepage": "https://github.com/HasanMusaraf/freshteam#readme"
 }
