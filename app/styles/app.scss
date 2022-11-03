@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 @mixin content-wrapper {
@@ -19,11 +19,8 @@ body {
 
 @import "sub-styles/nav.scss";
 
-
 @import "sub-styles/users.scss";
 
-
 @import "sub-styles/user-card.scss";
-
 
 @import "sub-styles/filter-nav.scss";

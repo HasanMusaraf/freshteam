@@ -9,8 +9,9 @@ init() {
 },
 
 
-userCount: function(){
-  this.getUser = this.get('store').findAll('user'); 
+userCount: async function(){
+  this.getUser = await this.get('store').findAll('user'); 
+  this.set('getUser',this.getUser.sortBy('first_name'));
 }
 
 });

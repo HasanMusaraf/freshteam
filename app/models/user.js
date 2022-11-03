@@ -5,6 +5,6 @@ export default DS.Model.extend({
   last_name: DS.attr('string'),
   email: DS.attr('string'),
   team: DS.attr('string'),
-  joiningDate: DS.attr('string'),
+  joiningDate: DS.attr('date'),
   image: DS.attr('string')
 });

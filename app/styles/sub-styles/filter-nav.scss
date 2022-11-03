@@ -1,30 +1,39 @@
-// Nav-3 section 
+// Nav-3 section
 
 .filter-by {
   display: flex;
   height: 20px;
   margin: 0 0 10px 0;
   cursor: pointer;
+  float: left;
+
 }
+
+.filter-by::after{
+  content: none;
+
+}
+
+.filter-by:hover{
+  text-decoration: none;
+}
+
 
 .filter-by span {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.08px;
-  color: #7B8E9F;
+  color: #7b8e9f;
   padding-right: 7px;
-
 }
 
 .filter-by p {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.08px;
-  color: #12344D;
+  color: #12344d;
   padding-right: 5.08px;
-
 }
-
 
 .filter-by .open {
   margin-top: 7px;
@@ -35,42 +44,140 @@
 .turn {
   transform: rotate(180deg);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 
 // Filter Table
 
-.filter-table {
+.filter .dropdown-menu {
   background-color: #ffffff;
-  width: 150px;
+  width: 120px;
   border-radius: 4px;
   text-align: center;
-  z-index: 1;
-  position: absolute;
-  top: 20px;
 }
 
-.filter-table ul {
-  list-style-type: none;
-}
 
-.filter-table ul li:nth-child(1) {
-  padding-top: 20px;
+.filter .team {
+  padding-top: 5px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: default;
+  position: relative;
+  right: 12px;
+}
+
+.filter-table {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #12344d;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.filter-table:hover {
+  color: #2752b0;
+}
+
+// Sort By
+
+.sort {
+  position: absolute;
+  left: 283px;
+}
+
+//.sortBy-table {
+//  width: 212px;
+//  height: 190px;
+//  border-radius: 4px;
+//  background: #ffffff;
+//  box-shadow: 0px 2px 10px rgba(24, 50, 71, 0.2);
+//  z-index: 1;
+//  position: absolute;
+//  left: 283px;
+//  top: 20px;
+//}
+
+//.sortBy-table .sort {
+//  padding: 10px;
+//  position: relative;
+//}
+
+//.sortBy-table .sort a {
+//  font-weight: 400;
+//  font-size: 14px;
+//  line-height: 18px;
+//  color: #183247;
+//  width: 192px;
+//  height: 30px;
+//  padding: 6px 28px 6px 10px;
+//}
+
+.divider {
+  width: 212px;
   position: relative;
   right: 10px;
 }
 
-.filter-table ul li {
-  padding-top: 10px;
-  font-weight: 300;
-  font-size: 14px;
-  color: #12344D;
-  cursor: pointer;
+
+//  sort by
+
+
+.sort .dropdown-menu {
+  background-color: #ffffff;
+  width: 212px;
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px rgba(24, 50, 71, 0.2);
 }
 
-.filter-table ul li:not(:nth-child(1)):hover {
-  color: #2752b0;
+.sort .menu{
+  padding: 0 10px 0 10px;
+
+}
+
+
+
+.sort-table {
+  font-weight: 400;
+  font-size: 14px;
+  color: #12344d;
+  cursor: pointer;
+  opacity: .8;
+  width: 192px;
+  display: flex;
+  align-items: center;
+  padding: 6px 28px 6px 10px;
+}
+
+
+.sort-method{
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #12344d;
+  cursor: pointer;
+  opacity: .8;
+  width: 192px;
+  display: flex;
+  align-items: center;
+  padding: 6px 28px 6px 10px;
+
+}
+
+
+
+.sort-method:hover{
+  background: #EBEFF3;
+
+}
+
+.sort-table:hover{
+  background: #EBEFF3;
+
+}
+
+
+.tick::after{
+  content: "\2713";
+  margin-left: auto;
 }
