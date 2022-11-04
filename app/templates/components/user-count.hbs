@@ -1,7 +1,15 @@
 {{#filter-by usersList=getUser}}{{/filter-by}}
 
-<div class="userWrapper">
-  {{#each getUser as |user|}}
-    {{#user-card user=user}}{{/user-card}}
-  {{/each}}
-</div>
+  <div class="userWrapper">
+    {{#if (gt getUser.length 0)}}
+      {{#each getUser as |user|}}
+        {{#user-card user=user}}{{/user-card}}
+      {{/each}}
+    {{else}}
+      <div class="no-data">
+        {{svg-jar "directory" class="user-icon"}}
+        <p class="no-emp"> No employees to list in this view</p>
+        <p class="try-something">Try looking for something less specific </p>
+      </div>
+    {{/if}}
+  </div>
