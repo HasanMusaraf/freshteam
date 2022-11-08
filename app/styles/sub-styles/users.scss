@@ -14,15 +14,29 @@
   display: flex;
   align-items: center;
   height: 54px;
+  width: 100%;
 }
 
 .subNav-tabs p {
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   padding-left: 15px;
   color: #12344d;
   margin-top: auto;
+}
+
+.subNav-tabs a {
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 15px;
+  color: #12344d;
+  position: absolute;
+  right: 110px;
+  border: 1px solid #cfd7df;
+  border-radius: 2px;
+  background: #ffffff;
+  padding: 6px 12px;
+  text-decoration: none;
 }
 
 .wrapper-users {
