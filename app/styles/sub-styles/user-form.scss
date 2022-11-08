@@ -1,0 +1,37 @@
+
+.add-emp-inputs  label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #475867;
+}
+
+.add-emp-inputs label span{
+  color: red;
+}
+
+.add-emp-inputs  input {
+  height: 32px;
+  width: 354px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #cfd7df;
+}
+
+.add-emp-inputs  input:focus{
+  background: #F7F9FA;
+}
+
+.add-emp-inputs  {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+
+.add-emp-inputs  div {
+  display: flex;
+  flex-direction: column;
+}
+
+
