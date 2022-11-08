@@ -1,20 +1,20 @@
-
-  <div class="add-emp">
-    <div class="close-btn-box">
-      <a {{action "close"}}>{{svg-jar "close" class="close-btn"}}</a>
-    </div>
-
-    <form method="post" {{action "step1" on="submit"}}>
-      <div class="add-emp-container">
-        <div class="add-emp-nav">
-          <p class="add-emp-text">Add Employee</p>
-          <div class="add-emp-btns">
-            <button type="reset" class="reset">Reset</button>
-            <button type="submit" class="apply">Apply</button>
-          </div>
-        </div>
-      </div>
-    </form>
-
+<div class="add-emp">
+  <div {{action "close"}} class="close-btn-box">
+    <a >{{svg-jar "close" class="close-btn"}}</a>
   </div>
 
+  <form method="post" >
+    <div class="add-emp-container">
+      <div class="add-emp-nav">
+        <p class="add-emp-text">Add Employee</p>
+        <div class="add-emp-btns">
+          <button type="reset" class="reset">Reset</button>
+          <button type="submit" class="apply">Apply</button>
+        </div>
+      </div>
+
+      {{#user-form}}{{/user-form}}
+    </div>
+  </form>
+
+</div>
