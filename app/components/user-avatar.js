@@ -16,11 +16,11 @@ export default Component.extend({
 
   isWork: function () {
     const charCodes = this.profile_char.charCodeAt();
-    return parseInt(charCodes, 10)
+    return charCodes
 
   },
 
-  isClosing: computed('background', function () {
+  isClosing: computed('avatar_colors', function () {
       return htmlSafe("background: " + this.avatar_colors[this.isWork() % this.avatar_colors.length]);
 
   }),
