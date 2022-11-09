@@ -1,0 +1,13 @@
+<div class="nav-3">
+  <div class="filter-by" {{action "touchEnd"}}>
+    <span>Filter by</span>
+    <p>All Employees</p>
+    <img
+      src="/assets/images/accordion-open.svg"
+      alt="img"
+      class="open {{if clicked 'turn'}}"
+    />
+  </div>
+</div>
+
+<UserFilter @isShowingBody={{isShowingBody}} @usersList={{usersList}} />

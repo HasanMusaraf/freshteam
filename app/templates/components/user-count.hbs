@@ -1,14 +1,7 @@
-{{#filter-nav usersList=getUser}}
-{{/filter-nav}}
-
+<FilterMenu @usersList={{getUser}} />
 
 <div class="userWrapper">
-
   {{#each getUser as |user|}}
-
-  {{#user-card user=user}}
-  {{/user-card}}
-
+    <UserCard @user={{user}} />
   {{/each}}
-
 </div>

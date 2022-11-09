@@ -1,9 +1,9 @@
 <div class="profile">
   {{#if user.image}}
-  <img src={{user.image}} alt="user">
+    <img src={{user.image}} alt="user" />
   {{else}}
-  <div class="profile-icon" style={{isClosing}}>
-    <p>{{profile_char}}</p>
-  </div>
+    <div class="profile-icon" style={{getBackgroundColor}}>
+      <p>{{profile_char}}</p>
+    </div>
   {{/if}}
 </div>

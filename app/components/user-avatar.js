@@ -20,7 +20,7 @@ export default Component.extend({
 
   },
 
-  isClosing: computed('background', function () {
+  getBackgroundColor: computed('background', function () {
       return htmlSafe("background: " + this.avatar_colors[this.isWork() % this.avatar_colors.length]);
 
   }),
