@@ -1,15 +1,14 @@
-
-.add-emp-inputs  label {
+.add-emp-inputs label {
   font-weight: 600;
   font-size: 12px;
   color: #475867;
 }
 
-.add-emp-inputs label span{
+.add-emp-inputs label span {
   color: red;
 }
 
-.add-emp-inputs  input {
+.add-emp-inputs input {
   height: 32px;
   width: 354px;
   border-radius: 4px;
@@ -17,21 +16,86 @@
   border: 1px solid #cfd7df;
 }
 
-.add-emp-inputs  input:focus{
-  background: #F7F9FA;
+.add-emp-inputs input:focus {
+  background: #f7f9fa;
 }
 
-.add-emp-inputs  {
+.add-emp-inputs {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   row-gap: 10px;
+  margin-top: 150px;
 }
 
-.add-emp-inputs  div {
+.add-emp-inputs div {
   display: flex;
   flex-direction: column;
+}
+
+//.datepicker {
+//  height: 259px;
+//  width: 360px;
+//  border-radius: 4.15px;
+//}
+
+.datepicker .datepicker-months table{
+  height: 200px;
+  width: 300px;
+}
+
+.datepicker .datepicker-days {
+  height: 259px;
+  width: 360px;
+  border-radius: 4.15px;
+}
+
+
+.datepicker .datepicker-months {
+  height: 200px;
+  width: 300px;
+}
+
+.datepicker .datepicker-months table thead{
+  .prev{
+  margin-left: 50px;
+  }
+}
+
+
+// Current Date
+
+.datepicker table tr td.today {
+  color: #7052cc !important;
+  background: none;
+}
+
+.datepicker table tr td.today:hover {
+  color: #7052cc !important;
+  background: none !important;
+}
+
+// Other days
+
+.datepicker table tr td.day {
+  font-weight: 400;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  padding: 5px 17px;
+
+}
+
+.datepicker table tr td span.month{
+  font-size: 14px !important;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.datepicker table tr td.day:hover {
+  background: #ebeff3 !important;
 }
 
 
