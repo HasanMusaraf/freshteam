@@ -34,13 +34,7 @@
   flex-direction: column;
 }
 
-//.datepicker {
-//  height: 259px;
-//  width: 360px;
-//  border-radius: 4.15px;
-//}
-
-.datepicker .datepicker-months table{
+.datepicker .datepicker-months table {
   height: 200px;
   width: 300px;
 }
@@ -49,20 +43,24 @@
   height: 259px;
   width: 360px;
   border-radius: 4.15px;
-}
+  padding-top: 5px;
 
+}
 
 .datepicker .datepicker-months {
   height: 200px;
   width: 300px;
 }
 
-.datepicker .datepicker-months table thead{
-  .prev{
-  margin-left: 50px;
+.datepicker .datepicker-months table thead {
+  .prev {
+    margin-left: 50px;
   }
 }
 
+.datepicker .datepicker-days table thead .datepicker-switch{
+  padding: 5px 0;
+}
 
 // Current Date
 
@@ -84,10 +82,9 @@
   width: 32px;
   height: 32px;
   padding: 5px 17px;
-
 }
 
-.datepicker table tr td span.month{
+.datepicker table tr td span.month {
   font-size: 14px !important;
   height: 46px;
   cursor: pointer;
@@ -97,5 +94,3 @@
 .datepicker table tr td.day:hover {
   background: #ebeff3 !important;
 }
-
-
