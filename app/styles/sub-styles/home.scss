@@ -1,4 +1,5 @@
-.home{
-    min-height: 2000px;
-    width: 300px;
+.wrapper-home{
+@include content-wrapper;
+z-index:-1;
+top: 80px;
 }

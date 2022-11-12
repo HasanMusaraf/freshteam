@@ -1,0 +1,110 @@
+import Route from '@ember/routing/route';
+
+
+export default Route.extend({
+//  beforeModel(){
+//    let users = [{
+//      firstName: 'Vamsi',
+//      lastName: 'Kaja',
+//      email: 'kajavamsi@gmail.com',
+//      team: 'Freshteam',
+//      joiningDate: '2020-07-22'
+//    }, {
+//      firstName: 'Koushi',
+//      lastName: 'R',
+//      email: 'koushik.r@gmail.com',
+//      team: 'Freshteam',
+//      joiningDate: '2019-06-24'
+//    }, {
+//        firstName: 'Mohamed',
+//        lastName: 'S',
+//        email: 'mohamed.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-24'
+//      }, {
+//        firstName: 'Koushi',
+//        lastName: 'R',
+//        email: 'koushik.r@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-25'
+//      }, {
+//        firstName: 'Hasan',
+//        lastName: 'S',
+//        email: 'hasan.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-26'
+
+//      }, {
+//        firstName: 'Musaraf',
+//        lastName: 'S',
+//        email: 'musaraf.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-27'
+//      }, {
+//        firstName: 'Asha',
+//        lastName: 'S',
+//        email: 'asha.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-28'
+//      }, {
+//        firstName: 'Begum',
+//        lastName: 'S',
+//        email: 'begum.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-29'
+//      }, {
+//        firstName: 'Shalini',
+//        lastName: 'S',
+//        email: 'shalini.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-30'
+//      }, {
+//        firstName: 'Siva',
+//        lastName: 'S',
+//        email: 'siva.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-07-24'
+//      }, {
+//        firstName: 'Kumar',
+//        lastName: 'S',
+//        email: 'kumar.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2019-07-25'
+//      }, {
+//        firstName: 'Prabhu',
+//        lastName: 'S',
+//        email: 'prabhu.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-07-26'
+//      }, {
+//        firstName: 'Aswath',
+//        lastName: 'K',
+//        email: 'aswath.k@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-07-27'
+//      }, {
+//        firstName: 'Shahul',
+//        lastName: 'S',
+//        email: 'shahul.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-4'
+//      }, {
+//        firstName: 'Hameed',
+//        lastName: 'S',
+//        email: 'hameed.s@gmail.com',
+//        team: 'Freshteam',
+//        joiningDate: '2022-06-8'
+//      }
+
+
+//]; // Add more data here
+    
+//    users.forEach((user) => {
+//      let userRecord = this.store.createRecord('user', user);
+//      userRecord.save();
+//    });
+
+//  },
+
+
+});
