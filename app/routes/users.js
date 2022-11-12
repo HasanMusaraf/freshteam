@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 
 
 export default Route.extend({
+
   //  beforeModel(){
   //    let users = [{
   //      first_name: 'Vamsi',
@@ -102,6 +103,7 @@ export default Route.extend({
   //      }
 
 
+
   //]; // Add more data here
 
   //    users.forEach((user) => {
@@ -110,7 +112,6 @@ export default Route.extend({
   //    });
 
   //  },
-
 
 
 });

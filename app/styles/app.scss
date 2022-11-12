@@ -1,11 +1,5 @@
 @import "ember-bootstrap/bootstrap";
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body{
     background: #E5E5E5;
 }
@@ -15,6 +9,7 @@ body{
   left: 80px;
 }
 
+
 @import "sub-styles/home.scss";
 
 @import "sub-styles/nav.scss";
@@ -23,4 +18,6 @@ body{
 @import "sub-styles/users.scss";
 
 
+
 @import "sub-styles/user-card.scss";
+
