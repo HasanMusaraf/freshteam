@@ -22,15 +22,20 @@
     <input type="text" id="designation" />
   </div>
 
+  <div>
+    <label for="ember251">Date of joining</label>
+    {{bootstrap-datepicker
+      value=expiresAt
+      format="yyyy-mm-dd"
+      changeDate="changeDateAction"
+      todayHighlight=true
+    }}
+  </div>
 
+  <div>
+<PowerSelect @selected={{this.destination}} @options={{this.cities}} @onchange={{action "chooseDestination"}} as |name|>
+ {{name}}
+</PowerSelect>
+  </div>
 
-</div>
-
-<div class="form-datePicker">
-  {{bootstrap-datepicker
-    value=expiresAt
-    format="yyyy-mm-dd"
-    changeDate="changeDateAction"
-    todayHighlight=true
-  }}
 </div>

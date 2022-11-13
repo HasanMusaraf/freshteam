@@ -34,6 +34,12 @@
   flex-direction: column;
 }
 
+// Bootstrap DatePicker ------------------------------------->
+
+.datepicker {
+  position: fixed;
+}
+
 .datepicker .datepicker-months table {
   height: 200px;
   width: 300px;
@@ -44,12 +50,16 @@
   width: 360px;
   border-radius: 4.15px;
   padding-top: 5px;
-
 }
 
 .datepicker .datepicker-months {
   height: 200px;
   width: 300px;
+}
+
+.datepicker .datepicker-years table {
+  height: 200px;
+  width: 260px;
 }
 
 .datepicker .datepicker-months table thead {
@@ -58,8 +68,22 @@
   }
 }
 
-.datepicker .datepicker-days table thead .datepicker-switch{
+.datepicker .datepicker-days table thead .datepicker-switch {
   padding: 5px 0;
+}
+
+
+.datepicker table tr td.active.active{
+  background:#7052cc;
+}
+
+
+.datepicker .datepicker-years table tbody td.year {
+  font-weight: 400;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  margin: 12px;
 }
 
 // Current Date
@@ -93,4 +117,5 @@
 
 .datepicker table tr td.day:hover {
   background: #ebeff3 !important;
+  color: #183247;
 }
