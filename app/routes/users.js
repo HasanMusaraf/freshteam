@@ -1,5 +1,4 @@
-import Route from '@ember/routing/route';
-
+import Route from "@ember/routing/route";
 
 export default Route.extend({
   //  beforeModel(){
@@ -35,7 +34,6 @@ export default Route.extend({
   //        team: 'Freshteam',
   //        image: 'https://ca.slack-edge.com/T032648LE-U046LDC7WKG-8b9dfe06b3c1-512',
   //        joiningDate: '2022-06-26'
-
   //      }, {
   //        first_name: 'Musaraf',
   //        last_name: 'S',
@@ -100,17 +98,10 @@ export default Route.extend({
   //        team: 'Freshdesk',
   //        joiningDate: '2022-06-8'
   //      }
-
-
   //]; // Add more data here
-
   //    users.forEach((user) => {
   //      let userRecord = this.store.createRecord('user', user);
   //      userRecord.save();
   //    });
-
   //  },
-
-
-
 });

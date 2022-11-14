@@ -1,22 +1,33 @@
 import Component from '@ember/component';
+import { computed } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
-init(){
-  this._super(...arguments);
-  this.cities = ['FreshTeam', 'FreshSales', 'FreshChat', 'FreshBot'];
-  this.destination = 'London'
+  store: service(),
 
-},
+  init() {
+    this._super(...arguments);
+    this.cities = ['Freshteam', 'Freshsales', 'Freshchat', 'Freshbot'];
+    this.destination = 'Freshteam';
+  },
+
+  allUsers: computed(function () {
+    return this.get('store').findAll('user', { reload: true });
+  }),
+
+  myTeamMembers: computed('allUsers.isFulfilled', function () {
+    this.teamList = [];
+    if (this.allUsers.isFulfilled) {
+      this.allUsers.uniqBy('team').forEach((element) => {
+        this.teamList.push(element.team);
+      });
+    }
+    return this.teamList;
+  }),
 
   actions: {
-    changeDateAction: function(d) {
-      // do sth with the new date
-      console.log(d.getDate());
-    },
     chooseDestination(city) {
       this.set('destination', city);
-    }
-  }
-
-  
+    },
+  },
 });

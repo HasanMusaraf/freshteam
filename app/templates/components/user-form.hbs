@@ -27,15 +27,21 @@
     {{bootstrap-datepicker
       value=expiresAt
       format="yyyy-mm-dd"
-      changeDate="changeDateAction"
       todayHighlight=true
+      autoclose=true
     }}
   </div>
 
-  <div>
-<PowerSelect @selected={{this.destination}} @options={{this.cities}} @onchange={{action "chooseDestination"}} as |name|>
- {{name}}
-</PowerSelect>
+  <div class="select-team">
+    <label for="ember300">Team</label>
+    <PowerSelect
+      @selected={{this.destination}}
+      @options={{this.myTeamMembers}}
+      @onchange={{action "chooseDestination"}}
+      as |name|
+    >
+      {{name}}
+    </PowerSelect>
   </div>
 
 </div>
