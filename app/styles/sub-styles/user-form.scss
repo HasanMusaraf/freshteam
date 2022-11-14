@@ -1,37 +1,186 @@
-
-.add-emp-inputs  label {
+.add-emp-inputs label {
   font-weight: 600;
   font-size: 12px;
   color: #475867;
 }
 
-.add-emp-inputs label span{
+.add-emp-inputs label span {
   color: red;
 }
 
-.add-emp-inputs  input {
+.add-emp-inputs input {
   height: 32px;
   width: 354px;
   border-radius: 4px;
   background: #ffffff;
   border: 1px solid #cfd7df;
+  padding-left: 12px;
+  font-size: 14px;
 }
 
-.add-emp-inputs  input:focus{
-  background: #F7F9FA;
+.add-emp-inputs input:focus {
+  background: #f7f9fa;
 }
 
-.add-emp-inputs  {
+.add-emp-inputs {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   row-gap: 10px;
+  margin-top: 150px;
 }
 
-.add-emp-inputs  div {
+.add-emp-inputs div {
   display: flex;
   flex-direction: column;
 }
 
+// Bootstrap DatePicker ------------------------------------->
 
+.datepicker {
+  position: fixed;
+}
+
+.datepicker .datepicker-months table {
+  height: 200px;
+  width: 300px;
+}
+
+.datepicker .datepicker-days {
+  height: 259px;
+  width: 360px;
+  border-radius: 4.15px;
+  padding-top: 5px;
+}
+
+.datepicker .datepicker-months {
+  height: 200px;
+  width: 300px;
+}
+
+.datepicker .datepicker-years table {
+  height: 200px;
+  width: 260px;
+}
+
+.datepicker .datepicker-months table thead {
+  .prev {
+    margin-left: 50px;
+  }
+}
+
+.datepicker .datepicker-days table thead .datepicker-switch {
+  padding: 5px 0;
+}
+
+.datepicker table tr td.active.active {
+  background: #7052cc;
+}
+
+.datepicker table tr td .month.active.active {
+  background: #7052cc !important;
+}
+
+.datepicker table tr td .year.active.active {
+  background: #7052cc !important;
+}
+
+.datepicker .datepicker-years table tbody td.year {
+  font-weight: 400;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  margin: 12px;
+}
+
+// Current Date
+
+.datepicker table tr td.today {
+  color: #7052cc !important;
+  background: none;
+}
+
+.datepicker table tr td.today.active.active {
+  color: #ffffff !important;
+}
+
+.datepicker table tr td.today:hover {
+  color: #7052cc !important;
+  background: none !important;
+}
+
+// Other days
+
+.datepicker table tr td.day {
+  font-weight: 400;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  padding: 5px 17px;
+}
+
+.datepicker table tr td span.month {
+  font-size: 14px !important;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.datepicker table tr td.day:hover {
+  background: #ebeff3 !important;
+  color: #183247;
+}
+
+// Ember power select
+
+.select-team {
+  width: 354px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.ember-power-select-selected-item {
+  padding-top: 3px;
+}
+
+.ember-power-select-trigger {
+  height: 32px;
+  border: 1px solid #cfd7df !important;
+}
+
+.ember-power-select-search {
+  margin: 15px 10px;
+}
+
+.ember-power-select-search-input {
+  height: 30px !important;
+  border-radius: 4px !important;
+}
+
+.ember-power-select-search-input:focus {
+  border: none !important;
+  padding-left: 12px !important;
+}
+
+.ember-power-select-option {
+  margin: 0 15px 10px 15px;
+  font-size: 14px;
+  padding: 6px 12px 6px 12px !important;
+}
+
+.ember-power-select-option[aria-current="true"]::after {
+  content: "\2714";
+  float: right;
+}
+
+.ember-power-select-option[aria-current="true"] {
+  background: #e5f2fd !important;
+  color: #183247 !important;
+  border-radius: 4px;
+}
+
+.ember-power-select-dropdown {
+  border: 1px solid rgba(218, 222, 228, 0.3) !important;
+  box-shadow: 0px 2px 10px rgba(24, 50, 71, 0.2) !important;
+}

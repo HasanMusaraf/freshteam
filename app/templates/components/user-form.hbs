@@ -1,23 +1,47 @@
+<UploadAvatar />
+
 <div class="add-emp-inputs">
 
-    <div class="">
-      <label for="first_name" >First Name<span class="required">*</span></label>
-      <input type="text" id="first_name" />
-    </div>
+  <div class="">
+    <label for="first_name">First Name<span class="required">*</span></label>
+    <input type="text" id="first_name" />
+  </div>
 
-    <div>
-      <label for="last_name">Last Name<span class="required">*</span></label>
-      <input type="text" id="last_name" />
-    </div>
+  <div>
+    <label for="last_name">Last Name<span class="required">*</span></label>
+    <input type="text" id="last_name" />
+  </div>
 
-    <div>
-      <label for="email">Email<span class="required">*</span></label>
-      <input type="text" id="email" />
-    </div>
+  <div>
+    <label for="email">Email<span class="required">*</span></label>
+    <input type="text" id="email" />
+  </div>
 
-    <div>
-      <label for="designation">Designation</label>
-      <input type="text" id="designation" />
-    </div>
+  <div>
+    <label for="designation">Designation</label>
+    <input type="text" id="designation" />
+  </div>
+
+  <div>
+    <label for="ember251">Date of joining</label>
+    {{bootstrap-datepicker
+      value=expiresAt
+      format="yyyy-mm-dd"
+      todayHighlight=true
+      autoclose=true
+    }}
+  </div>
+
+  <div class="select-team">
+    <label for="ember300">Team</label>
+    <PowerSelect
+      @selected={{this.destination}}
+      @options={{this.myTeamMembers}}
+      @onchange={{action "chooseDestination"}}
+      as |name|
+    >
+      {{name}}
+    </PowerSelect>
+  </div>
 
 </div>
