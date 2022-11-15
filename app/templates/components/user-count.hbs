@@ -1,7 +1,7 @@
 <FilterMenu @usersList={{getUser}} />
 
 <div class="userWrapper">
-  {{#each getUser as |user|}}
+  {{#each this.getUser as |user|}}
     <UserCard @user={{user}} />
   {{/each}}
 </div>
