@@ -1,0 +1,31 @@
+.profile-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  opacity: .9;
+}
+
+.profile-icon span {
+  font-size: 35px;
+  border-radius: 50%;
+
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.avatar-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile{
+  padding: 50px;
+}
