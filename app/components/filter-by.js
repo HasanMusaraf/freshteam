@@ -10,7 +10,7 @@ export default Component.extend({
     this._super(...arguments);
     set(this, 'selectedOrder', 'asc');
     this.sortOrder = true;
-    set(this, 'selectedValue', 'first_name');
+    set(this, 'selectedValue', 'firstName');
   },
 
   allUsers: computed(function () {
@@ -26,7 +26,7 @@ export default Component.extend({
       set(this, 'currentTeam', user);
       let getUser = await this.get('store').findAll('user');
       let userList = getUser.filterBy('team', user);
-      set(this, 'usersList', userList.sortBy('first_name'));
+      set(this, 'usersList', userList.sortBy('firstName'));
     },
     sortFunc: function (sortName, sortDisplay) {
       set(this, 'selectedValue', sortName);
@@ -63,11 +63,11 @@ export default Component.extend({
   sortArray: computed(function () {
     let sortList = [
       {
-        name: 'first_name',
+        name: 'firstName',
         displayName: 'First Name',
       },
       {
-        name: 'last_name',
+        name: 'lastName',
         displayName: 'Last Name',
       },
       {
