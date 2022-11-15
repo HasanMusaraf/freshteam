@@ -10,7 +10,7 @@ export default Component.extend({
     this._super(...arguments);
     this.set("selectedOrder", "asc");
     this.sortOrder = true;
-    this.set("selectedValue", "first_name");
+    this.set("selectedValue", "firstName");
   },
 
   allUsers: computed(function () {
@@ -26,7 +26,7 @@ export default Component.extend({
       this.set("currentTeam", user);
       let getUser = await this.get("store").findAll("user");
       let userList = getUser.filterBy("team", user);
-      this.set("usersList", userList.sortBy("first_name"));
+      this.set("usersList", userList.sortBy("firstName"));
     },
     sortFunc: function (sortName, sortDisplay) {
       this.set("selectedValue", sortName);
@@ -69,7 +69,7 @@ export default Component.extend({
     var regex = new RegExp(term.toLowerCase());
 
     let getSearch = getInput.filter(function (person) {
-      return regex.test(person.first_name.toLowerCase());
+      return regex.test(person.firstName.toLowerCase());
     });
 
     this.set("usersList", getSearch);
@@ -78,11 +78,11 @@ export default Component.extend({
   sortArray: computed(function () {
     let sortList = [
       {
-        name: "first_name",
+        name: "firstName",
         displayName: "First Name",
       },
       {
-        name: "last_name",
+        name: "lastName",
         displayName: "Last Name",
       },
       {
