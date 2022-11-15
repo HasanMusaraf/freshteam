@@ -2,100 +2,101 @@ import Route from '@ember/routing/route';
 
 
 export default Route.extend({
+
   //  beforeModel(){
   //    let users = [{
-  //      first_name: 'Vamsi',
-  //      last_name: 'Kaja',
+  //      firstName: 'Vamsi',
+  //      lastName: 'Kaja',
   //      email: 'kajavamsi@gmail.com',
   //      team: 'Freshteam',
   //      image: 'https://ca.slack-edge.com/T032648LE-UUF6RQE2Z-ga1f6cd9920b-512',
   //      joiningDate: '2020-07-22'
   //    }, {
-  //      first_name: 'Koushi',
-  //      last_name: 'R',
+  //      firstName: 'Koushi',
+  //      lastName: 'R',
   //      email: 'koushik.r@gmail.com',
   //      team: 'Freshteam',
   //      joiningDate: '2019-06-24'
   //    }, {
-  //        first_name: 'Mohamed',
-  //        last_name: 'S',
+  //        firstName: 'Mohamed',
+  //        lastName: 'S',
   //        email: 'mohamed.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-24'
   //      }, {
-  //        first_name: 'Koushi',
-  //        last_name: 'R',
+  //        firstName: 'Koushi',
+  //        lastName: 'R',
   //        email: 'koushik.r@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-25'
   //      }, {
-  //        first_name: 'Hasan',
-  //        last_name: 'S',
+  //        firstName: 'Hasan',
+  //        lastName: 'S',
   //        email: 'hasan.s@gmail.com',
   //        team: 'Freshteam',
   //        image: 'https://ca.slack-edge.com/T032648LE-U046LDC7WKG-8b9dfe06b3c1-512',
   //        joiningDate: '2022-06-26'
 
   //      }, {
-  //        first_name: 'Musaraf',
-  //        last_name: 'S',
+  //        firstName: 'Musaraf',
+  //        lastName: 'S',
   //        email: 'musaraf.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-27'
   //      }, {
-  //        first_name: 'Asha',
-  //        last_name: 'S',
+  //        firstName: 'Asha',
+  //        lastName: 'S',
   //        email: 'asha.s@gmail.com',
   //        team: 'Freshteam',
   //        image: 'https://www.unh.edu/unhtoday/sites/default/files/styles/article_huge/public/article/2019/professional_woman_headshot.jpg?itok=3itzxHXh',
   //        joiningDate: '2022-06-28'
   //      }, {
-  //        first_name: 'Begum',
-  //        last_name: 'S',
+  //        firstName: 'Begum',
+  //        lastName: 'S',
   //        email: 'begum.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-29'
   //      }, {
-  //        first_name: 'Shalini',
-  //        last_name: 'S',
+  //        firstName: 'Shalini',
+  //        lastName: 'S',
   //        email: 'shalini.s@gmail.com',
   //        team: 'Freshteam',
   //        image: 'https://ca.slack-edge.com/T032648LE-UU4Q4BALA-00f24f2ff600-512',
   //        joiningDate: '2022-06-30'
   //      }, {
-  //        first_name: 'Siva',
-  //        last_name: 'S',
+  //        firstName: 'Siva',
+  //        lastName: 'S',
   //        email: 'siva.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-07-24'
   //      }, {
-  //        first_name: 'Kumar',
-  //        last_name: 'S',
+  //        firstName: 'Kumar',
+  //        lastName: 'S',
   //        email: 'kumar.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2019-07-25'
   //      }, {
-  //        first_name: 'Prabhu',
-  //        last_name: 'S',
+  //        firstName: 'Prabhu',
+  //        lastName: 'S',
   //        email: 'prabhu.s@gmail.com',
   //        team: 'Freshteam',
   //        image: 'https://ca.slack-edge.com/T032648LE-U034PG3S1AA-0f9221f1591a-512',
   //        joiningDate: '2022-07-26'
   //      }, {
-  //        first_name: 'Aswath',
-  //        last_name: 'K',
+  //        firstName: 'Aswath',
+  //        lastName: 'K',
   //        email: 'aswath.k@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-07-27'
   //      }, {
-  //        first_name: 'Shahul',
-  //        last_name: 'S',
+  //        firstName: 'Shahul',
+  //        lastName: 'S',
   //        email: 'shahul.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-4'
   //      }, {
-  //        first_name: 'Hameed',
-  //        last_name: 'S',
+  //        firstName: 'Hameed',
+  //        lastName: 'S',
   //        email: 'hameed.s@gmail.com',
   //        team: 'Freshteam',
   //        joiningDate: '2022-06-8'
@@ -110,7 +111,6 @@ export default Route.extend({
   //    });
 
   //  },
-
 
 
 });

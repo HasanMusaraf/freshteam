@@ -1,4 +1,5 @@
 // Side Nav
+
 .side-nav {
   position: fixed;
   height: 100%;
@@ -25,15 +26,13 @@
   left: 10px;
   width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
 }
 
 .candidates .icon {
   width: 22.2px;
   fill: #ffffff;
+  margin:9px 0 0 9px;
 }
 
 .active-icon{
@@ -55,21 +54,19 @@
 .top-nav-tabs {
   position: absolute;
   left: 90px;
-  display: flex;
-  align-items: center;
   height: 54px;
+  top: 10px;
 }
 
 .top-nav-icon {
   width: 34px;
 }
 
-.top-nav-tabs p {
-  font-family: 'SF UI Text';
-  font-style: normal;
+
+.top-nav-tabs span {
   font-weight: 400;
   font-size: 18px;
-  padding-left: 15px;
+  padding-left: 10px;
   color: #41637C;
   margin-top: auto;
 }
@@ -89,9 +86,7 @@ footer {
 
 footer p {
   background-color: #F5F7F9;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  text-align: center;
   color: #607787;
   font-weight: 400;
   font-size: 12px;
