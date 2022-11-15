@@ -1,9 +1,13 @@
-<div class="profile">
-  {{#if user.image}}
-    <img src={{user.image}} alt="user" />
-  {{else}}
-    <div class="profile-icon" style={{getBackgroundColor}}>
-      <p>{{profile_char}}</p>
-    </div>
-  {{/if}}
-</div>
+ <div class="profile">
+    {{#if user.image}}
+      <img src={{user.image}} alt="user">
+    {{else}}
+      <div class="profile-icon" style={{getBgColor}}>
+        <span>{{profileChar}}</span>
+      </div>
+    {{/if}}
+  </div>
+
+  
+
+
