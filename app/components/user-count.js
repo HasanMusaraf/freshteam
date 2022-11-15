@@ -11,7 +11,7 @@ init() {
 
 userCount: async function(){
   this.getUser = await this.get('store').findAll('user'); 
-  this.set('getUser',this.getUser.sortBy('first_name'));
+  this.set('getUser',this.getUser.sortBy('first_name')).filterBy('isNew', false);
 }
 
 });

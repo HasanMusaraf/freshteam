@@ -8,5 +8,6 @@ export default Component.extend({
     close: function () {
       this.router.transitionTo("users");
     },
+    
   },
 });
