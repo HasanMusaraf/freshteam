@@ -9,11 +9,10 @@
 }
 
 .subNav-tabs {
-  position: absolute;
-  left: 84px;
   display: flex;
   align-items: center;
   height: 54px;
+  margin-left: 84px;
 }
 
 .subNav-tabs p {
@@ -30,3 +29,5 @@
   top: 120px;
   z-index: -1;
 }
+
+
