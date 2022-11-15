@@ -1,10 +1,7 @@
-<div class="userWrapper">
-
-  {{#each getUser as |user|}}
-
-  {{#user-card user=user}}
-  {{/user-card}}
-
+<div class="avatar-wrapper">
+  {{#each this.getUser as |user|}}
+    <UserCard @user={{user}} />
   {{/each}}
-
 </div>
+
+

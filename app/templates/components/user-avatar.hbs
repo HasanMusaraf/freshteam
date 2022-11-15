@@ -2,8 +2,11 @@
     {{#if user.image}}
       <img src={{user.image}} alt="user">
     {{else}}
-      <div class="profile-icon" style={{isClosing}}>
-        <p>{{profile_char}}</p>
+      <div class="profile-icon" style={{getBgColor}}>
+        <span>{{profileChar}}</span>
       </div>
     {{/if}}
   </div>
+
+  
+
