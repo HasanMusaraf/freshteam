@@ -7,7 +7,6 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.cities = ['Freshteam', 'Freshsales', 'Freshchat', 'Freshbot'];
     this.destination = 'Freshteam';
   },
 
@@ -18,7 +17,7 @@ export default Component.extend({
   myTeamMembers: computed('allUsers.isFulfilled', function () {
     this.teamList = [];
     if (this.allUsers.isFulfilled) {
-      this.allUsers.uniqBy('team').forEach((element) => {
+      this.allUsers.filterBy('isNew',false).rejectBy('team',null).uniqBy('team').forEach((element) => {
         this.teamList.push(element.team);
       });
     }
@@ -26,8 +25,8 @@ export default Component.extend({
   }),
 
   actions: {
-    chooseDestination(city) {
-      this.set('destination', city);
+    chooseDestination(selectedTeam) {
+      this.set('destination', selectedTeam);
     },
   },
 });

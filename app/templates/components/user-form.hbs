@@ -2,24 +2,25 @@
 
 <div class="add-emp-inputs">
 
-  <div class="">
-    <label for="first_name">First Name<span class="required">*</span></label>
-    <input type="text" id="first_name" />
+  <div>
+    <label for="firstName">First Name<span class="required">*</span></label>
+    {{input type="text" id="firstName" value=model.firstName }}
+    
   </div>
 
   <div>
-    <label for="last_name">Last Name<span class="required">*</span></label>
-    <input type="text" id="last_name" />
+    <label for="lastName">Last Name<span class="required">*</span></label>
+    {{input type="text" id="lastName"  value=model.lastName }}
   </div>
 
   <div>
     <label for="email">Email<span class="required">*</span></label>
-    <input type="text" id="email" />
+    {{input type="text" id="email" value=model.email }}
   </div>
 
   <div>
     <label for="designation">Designation</label>
-    <input type="text" id="designation" />
+    {{input type="text" id="designation" value=model.designation }}
   </div>
 
   <div>

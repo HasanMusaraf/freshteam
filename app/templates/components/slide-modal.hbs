@@ -1,9 +1,9 @@
 <div class="add-emp">
   <div {{action "close"}} class="close-btn-box">
-    <a >{{svg-jar "close" class="close-btn"}}</a>
+    <a>{{svg-jar "close" class="close-btn"}}</a>
   </div>
 
-  <form method="post" {{action 'step1' on="submit"}}>
+  <form method="post" {{action "sendForm" on="submit"}}>
     <div class="add-emp-container">
       <div class="add-emp-nav">
         <p class="add-emp-text">Add Employee</p>
@@ -12,8 +12,7 @@
           <button type="submit" class="apply">Apply</button>
         </div>
       </div>
-
-      {{#user-form}}{{/user-form}}
+      {{yield}}
     </div>
   </form>
 

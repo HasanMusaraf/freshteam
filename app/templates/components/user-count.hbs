@@ -1,8 +1,8 @@
 {{#filter-by usersList=getUser}}{{/filter-by}}
 
 <div class="userWrapper">
-  {{#if (gt getUser.length 0)}}
-    {{#each getUser as |user|}}
+  {{#if (gt this.userLists.length 0)}}
+    {{#each this.userLists as |user|}}
       {{#user-card user=user}}{{/user-card}}
     {{/each}}
   {{else}}

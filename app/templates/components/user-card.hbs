@@ -1,5 +1,5 @@
 <div class="userCard">
-  {{#user-avatar user=user}}{{/user-avatar}}
-  <p class="fullName">{{user.first_name}} {{user.last_name}}</p>
-  <p class="email">{{user.email}}</p>
+  <UserAvatar @user={{this.user}} /> 
+  <p class="fullName">{{this.user.firstName}} {{this.user.lastName}}</p>
+  <p class="email">{{this.user.email}}</p>
 </div>
