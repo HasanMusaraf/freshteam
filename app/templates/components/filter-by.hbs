@@ -1,10 +1,11 @@
 {{! Filter By }}
 
 <div class="filter">
-  <BsDropdown as |dd|>
-    <dd.toggle class="filter-by"><span>Filter by</span><p
+  <BsDropdown  data-test-id="bsDropdown"  as |dd|>
+    <dd.toggle class="filter-by" data-test-id="filterBy"><span data-test-id="hasFilterBy">Filter by</span><p
         class="emp"
-        {{action "filterby"}}
+        type="button"
+        {{action "filterby"}} 
       >{{if currentTeam currentTeam "All Employees"}}</p>
       <img
         src="/assets/images/accordion-open.svg"
@@ -13,11 +14,12 @@
       />
     </dd.toggle>
     <dd.menu>
-      <li class="team">Teams</li>
+      <li class="team" data-test-id="filterCurrentTeam">Teams</li>
       {{#each myTeamMembers as |myTeam|}}
         <li
           class="filter-table"
           {{action "isFilter" myTeam.team}}
+           
         >{{myTeam.team}}</li>
       {{/each}}
     </dd.menu>

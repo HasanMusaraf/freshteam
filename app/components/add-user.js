@@ -4,7 +4,10 @@ export default Component.extend({
 
   actions: {
     save: function(){
-    this.model.save();
+      if (this.model.save()) {
+        this.set('model.active', true);
+        alert("User successfully Created")
+      }
     }
   }
 });

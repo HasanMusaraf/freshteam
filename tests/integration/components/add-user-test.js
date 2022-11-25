@@ -16,9 +16,7 @@ module('Integration | Component | add-user', function(hooks) {
 
     // Template block usage:
     await render(hbs`
-      {{#add-user}}
-        template block text
-      {{/add-user}}
+    <AddUser />
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

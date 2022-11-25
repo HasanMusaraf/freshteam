@@ -1,26 +1,25 @@
 <UploadAvatar />
 
-<div class="add-emp-inputs">
+<div class="add-emp-inputs" data-test-id="add-employee-fields">
 
   <div>
     <label for="firstName">First Name<span class="required">*</span></label>
-    {{input type="text" id="firstName" value=model.firstName }}
-    
+    {{input type="text" id="firstName" value=model.firstName data-test-id="firstName"}}
   </div>
 
   <div>
     <label for="lastName">Last Name<span class="required">*</span></label>
-    {{input type="text" id="lastName"  value=model.lastName }}
+    {{input type="text" id="lastName" value=model.lastName}}
   </div>
 
   <div>
     <label for="email">Email<span class="required">*</span></label>
-    {{input type="text" id="email" value=model.email }}
+    {{input type="text" id="email" value=model.email}}
   </div>
 
   <div>
     <label for="designation">Designation</label>
-    {{input type="text" id="designation" value=model.designation }}
+    {{input type="text" id="designation" value=model.designation}}
   </div>
 
   <div>

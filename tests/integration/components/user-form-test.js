@@ -2,6 +2,8 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
+import { fillIn } from 'ember-test-helpers';
+
 
 module('Integration | Component | user-form', function(hooks) {
   setupRenderingTest(hooks);
@@ -10,17 +12,15 @@ module('Integration | Component | user-form', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{user-form}}`);
-
-    assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      {{#user-form}}
-        template block text
-      {{/user-form}}
+      <UserForm />
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-id="add-employee-fields"]').exists();
+    assert.dom('[ data-test-id="firstName"]').exists();
+
+    //await fillIn('[ data-test-id="firstName"]','hello world')
   });
 });

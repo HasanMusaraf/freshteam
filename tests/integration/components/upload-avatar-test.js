@@ -10,17 +10,18 @@ module('Integration | Component | upload-avatar', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`{{upload-avatar}}`);
+    //await render(hbs`{{upload-avatar}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    //assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      {{#upload-avatar}}
-        template block text
-      {{/upload-avatar}}
+    <UploadAvatar />
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.dom('[data-test-id="upload-avatar"]').exists();
+    assert.dom('[data-test-id="avatar-icon"]').hasClass('avatar-icon');
+    assert.dom('[data-test-id="uploader-icon"]').hasClass('uploader-icon');
+
   });
 });

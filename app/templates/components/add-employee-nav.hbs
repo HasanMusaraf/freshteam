@@ -1,6 +1,6 @@
-<header class="subNav">
-  <div class="subNav-tabs">
-    <p>Employees</p>
-    <a {{action "add_emp" true}}>Add Employee</a>
+<header class="subNav" data-test-id="subNav-header">
+  <div class="subNav-tabs" data-test-id="subNav-tabs">
+    <p data-test-id="subNav-employee-text">Employees</p>
+    <a {{action "add_emp" true}} type="button" data-test-id="addEmployee">Add Employee</a>
   </div>
 </header>

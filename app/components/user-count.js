@@ -5,17 +5,13 @@ import { computed } from '@ember/object';
 export default Component.extend({
   store: service(),
 
-userLists: computed('getAllUsers.isFulfilled', function (){
-  if (this.getAllUsers.isFulfilled) {
-      return this.getAllUsers.sortBy('first_name').filterBy('isNew', false);
-  }
+  userLists: computed('getAllUsers.isFulfilled', function (){
+    if (this.getAllUsers.isFulfilled) {
+      return this.getAllUsers.sortBy('firstName').filterBy('active', true);
+    }
+  }),
 
-}),
-
-getAllUsers: computed(function(){
-  let getUser = this.get('store').findAll('user',{reload: true}); 
-  return getUser;
-})
-
-
+  getAllUsers: computed(function(){
+    return this.get('store').findAll('user',{reload: true}); 
+  })
 });

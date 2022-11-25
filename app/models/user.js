@@ -1,11 +1,12 @@
-import DS from 'ember-data';
+import DS from "ember-data";
 
 export default DS.Model.extend({
-  firstName: DS.attr('string'),
-  lastName: DS.attr('string'),
-  email: DS.attr('string'),
-  team: DS.attr('string'),
-  joiningDate: DS.attr('string'),
-  designation: DS.attr('string'),
-  image: DS.attr('string')
+  firstName: DS.attr("string"),
+  lastName: DS.attr("string"),
+  email: DS.attr("string"),
+  team: DS.attr("string"),
+  joiningDate: DS.attr("string"),
+  designation: DS.attr("string"),
+  image: DS.attr("string"),
+  active: DS.attr('boolean', {defaultValue: false})
 });
