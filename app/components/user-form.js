@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { computed, set } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -7,7 +7,6 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.destination = 'Freshteam';
   },
 
   allUsers: computed(function () {
@@ -17,7 +16,7 @@ export default Component.extend({
   myTeamMembers: computed('allUsers.isFulfilled', function () {
     this.teamList = [];
     if (this.allUsers.isFulfilled) {
-      this.allUsers.filterBy('isNew',false).rejectBy('team',null).uniqBy('team').forEach((element) => {
+      this.allUsers.filterBy('active',true).rejectBy('team',null).uniqBy('team').forEach((element) => {
         this.teamList.push(element.team);
       });
     }
@@ -26,7 +25,7 @@ export default Component.extend({
 
   actions: {
     chooseDestination(selectedTeam) {
-      this.set('destination', selectedTeam);
+      set(this,'model.team', selectedTeam);
     },
   },
 });

@@ -4,8 +4,8 @@ export default Component.extend({
 
   actions: {
     save: function(){
+      this.set('model.active', true);
       if (this.model.save()) {
-        this.set('model.active', true);
         alert("User successfully Created")
       }
     }

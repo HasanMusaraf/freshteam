@@ -2,22 +2,22 @@
 
 <div class="add-emp-inputs" data-test-id="add-employee-fields">
 
-  <div>
-    <label for="firstName">First Name<span class="required">*</span></label>
-    {{input type="text" id="firstName" value=model.firstName data-test-id="firstName"}}
+  <div data-test-id="firstName">
+    <label for="firstName" >First Name<span class="required" >*</span></label>
+    {{input type="text" id="firstName" value=model.firstName }}
   </div>
 
-  <div>
+  <div data-test-id="lastName">
     <label for="lastName">Last Name<span class="required">*</span></label>
     {{input type="text" id="lastName" value=model.lastName}}
   </div>
 
-  <div>
+  <div data-test-id="email">
     <label for="email">Email<span class="required">*</span></label>
     {{input type="text" id="email" value=model.email}}
   </div>
 
-  <div>
+  <div data-test-id="designation">
     <label for="designation">Designation</label>
     {{input type="text" id="designation" value=model.designation}}
   </div>
@@ -25,7 +25,7 @@
   <div>
     <label for="ember251">Date of joining</label>
     {{bootstrap-datepicker
-      value=expiresAt
+      value=model.joiningDate
       format="yyyy-mm-dd"
       todayHighlight=true
       autoclose=true
@@ -35,9 +35,10 @@
   <div class="select-team">
     <label for="ember300">Team</label>
     <PowerSelect
-      @selected={{this.destination}}
+      @selected={{this.model.team}}
       @options={{this.myTeamMembers}}
       @onchange={{action "chooseDestination"}}
+      @placeholder='Select Team'
       as |name|
     >
       {{name}}
