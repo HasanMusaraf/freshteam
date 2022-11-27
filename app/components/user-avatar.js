@@ -14,14 +14,14 @@ export default Component.extend({
       '#C7D9A8', '#95D1F3', '#BFC5EE', '#E8BBC1'];
   },
 
-  isWork: function () {
-    const charCodes = this.profileChar.charCodeAt();
-    return parseInt(charCodes, 10)
 
+  getCharCode: function () {
+    const charCodes = this.profileChar.charCodeAt();
+    return charCodes
   },
 
-  isClosing: computed('background', function () {
-      return htmlSafe("background: " + this.avatar_colors[this.isWork() % this.avatar_colors.length]);
+  getBgColor: computed('avatar_colors', function () {
+      return htmlSafe("background: " + this.avatar_colors[this.getCharCode() % this.avatar_colors.length]);
 
   }),
 });
