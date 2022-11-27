@@ -10,11 +10,7 @@ export default Component.extend({
   }),
 
   userList: computed('getTeam', function () {
-    if (this.getTeam) {
-      return this.allUsers.filterBy('team', this.getTeam);
-    } else {
-      return get(this,'store').findAll('user', { reload: true });
-    }
+    return this.getTeam ? this.allUsers.filterBy('team', this.getTeam) : this.allUsers;
   }),
 
   myTeamMembers: computed('allUsers.isFulfilled', function () {
