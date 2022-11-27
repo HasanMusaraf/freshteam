@@ -1,1 +1,34 @@
-  <UserCount />
+{{!-- Filter Nav --}}
+<div class="nav-3">
+  <div class="filter-by" {{action "touchEnd"}}>
+    <span>Filter by</span>
+    <p>All Employees</p>
+    <img
+      src="/assets/images/accordion-open.svg"
+      alt="img"
+      class="open {{if clicked "turn"}}"
+    />
+  </div>
+</div>
+
+{{!-- Filter Dropdown --}}
+
+{{#if isShowingBody}}
+  <div class="filter-table">
+    <ul>
+      <li {{action "isFilter" }}>All Teams</li>
+      {{#each myTeamMembers as |myTeam|}}
+        <li {{action "isFilter" myTeam.team}}>{{myTeam.team}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}
+
+{{!-- Users Cards --}}
+
+<div class="userWrapper">
+  {{#each this.userList as |user|}}
+    <UserCard @user={{user}} />
+  {{/each}}
+</div>
+
