@@ -110,12 +110,11 @@ export default Component.extend({
 
 
   whoRan: function (term) {
-    const getInput = this.store.peekAll('user');
+    const getInput = this.allUsers;
     const regex = new RegExp(term.toLowerCase());
     const getSearch = getInput.filter(function (person) {
       return regex.test(person.firstName.toLowerCase());
     });
-    this.set('searchValue', getSearch);
+    set(this,'searchValue', getSearch);
   },
-
 });
