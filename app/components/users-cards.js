@@ -93,10 +93,10 @@ export default Component.extend({
       set(this, 'currentTeam', team);
     },
 
-    sortFunc: function (sortName) {
+    sortFunc: function (sortName,sortDisplay) {
         set(this, 'sortName', sortName);
         set(this, 'selectedValue', sortName);
-
+        set(this, 'sortDisplay',sortDisplay)
     },
 
     sortOrder: function (order) {

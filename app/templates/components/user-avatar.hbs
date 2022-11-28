@@ -1,13 +1,12 @@
- <div class="profile">
+ <div class="profile" data-test-id="profile-container">
     {{#if user.image}}
-      <img src={{user.image}} alt="user">
+      <img src={{user.image}} alt="user" data-test-id="has-image">
     {{else}}
-      <div class="profile-icon" style={{getBgColor}}>
-        <span>{{profileChar}}</span>
+      <div class="profile-icon" style={{getBgColor}} data-test-id="user-avatar">
+        <span data-test-id="profileChar">{{profileChar}}</span>
       </div>
     {{/if}}
   </div>
-
   
 
 
