@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import { debounce } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import { computed, get, set } from '@ember/object';
 
@@ -17,11 +18,17 @@ export default Component.extend({
     return this.getUser;
   }),
 
-  userList: computed('getTeam','sortName','selectedOrder','allUsers.isFulfilled', function () {
+  userList: computed('getTeam','sortName','selectedOrder','allUsers.isFulfilled','searchValue', function () {
     if (this.allUsers.isFulfilled) {
-      if (this.selectedOrder == 'desc' ) {
+      if(this.searchValue){
+        if (this.selectedOrder == 'asc' ) {
+          return  this.getTeam ? this.searchValue.filterBy('team', this.getTeam).sortBy(this.sortName) : this.searchValue.sortBy(this.sortName);
+        } else {
+          return  this.getTeam ? this.searchValue.filterBy('team', this.getTeam).sortBy(this.sortName).reverse() : this.searchValue.sortBy(this.sortName).reverse();
+        }
+    } else if (this.selectedOrder == 'desc' ) {
         return  this.getTeam ? this.allUsers.filterBy('team', this.getTeam).sortBy(this.sortName).reverse() : this.allUsers.sortBy(this.sortName).reverse();
-    } else{
+    }  else {
       return  this.getTeam ? this.allUsers.filterBy('team', this.getTeam).sortBy(this.sortName) : this.allUsers.sortBy(this.sortName);
     }
   }
@@ -96,6 +103,18 @@ export default Component.extend({
        set(this, 'selectedOrder', order);
     },
 
+    fname: function (term) {
+      debounce(this, this.whoRan, term, 150);
+    },
+  },
 
+
+  whoRan: function (term) {
+    const getInput = this.allUsers;
+    const regex = new RegExp(term.toLowerCase());
+    const getSearch = getInput.filter(function (person) {
+      return regex.test(person.firstName.toLowerCase());
+    });
+    set(this,'searchValue', getSearch);
   },
 });

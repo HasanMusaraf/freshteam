@@ -12,7 +12,6 @@
 .profile-icon span {
   font-size: 35px;
   border-radius: 50%;
-
 }
 
 .profile img {
@@ -35,11 +34,11 @@
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
 }
 
-
 .userWrapper {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .userCard p {
@@ -58,6 +57,41 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: #576C7D;
+  color: #576c7d;
+}
+
+// No Data
+
+.no-data {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 630px;
+  top: 300px;
+}
+
+.no-data .user-icon {
+  width: 100px;
+  height: 100px;
+  fill: #000000;
+  opacity: 0.1;
+}
+
+.no-data p {
+  margin: 0;
+}
+
+.no-data .no-emp {
+  font-weight: 600;
+  font-size: 20px;
+  color: #475867;
+  padding-top: 5px;
+}
+
+.no-data .try-something {
+  font-weight: 400;
+  font-size: 18px;
+  color: #475867;
+  opacity: .7;
 }
 

@@ -9,8 +9,8 @@
         class="open {{if clicked 'turn'}}"
       />
     </dd.toggle>
-    <dd.menu >
-      <li class="team" {{action "isFilter" }}>All Teams</li>
+    <dd.menu>
+      <li class="team" {{action "isFilter"}}>All Teams</li>
       {{#each myTeamMembers as |myTeam|}}
         <li class="filter-table"><button
             {{action "isFilter" myTeam.team}}
@@ -19,7 +19,6 @@
     </dd.menu>
   </BsDropdown>
 </div>
-
 
 {{! Sort By }}
 
@@ -58,13 +57,31 @@
   </BsDropdown>
 </div>
 
+{{! Search Bar }}
 
+<div class="search-field">
+  {{input
+    type="search"
+    id="search"
+    placeholder="Search by name"
+    key-up="fname"
+  }}
+  <em>{{svg-jar "search" class="magnifier"}}</em>
 
-{{!-- Users Cards --}}
-
-<div class="userWrapper">
-  {{#each this.userList as |user|}}
-    <UserCard @user={{user}} />
-  {{/each}}
 </div>
 
+{{! Users Cards }}
+
+<div class="userWrapper">
+  {{#if (gt userList.length 0)}}
+    {{#each this.userList as |user|}}
+      <UserCard @user={{user}} />
+    {{/each}}
+  {{else}}
+    <div class="no-data">
+      {{svg-jar "directory" class="user-icon"}}
+      <p class="no-emp"> No employees to list in this view</p>
+      <p class="try-something">Try looking for something less specific </p>
+    </div>
+  {{/if}}
+</div>

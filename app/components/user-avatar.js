@@ -14,6 +14,7 @@ export default Component.extend({
       '#C7D9A8', '#95D1F3', '#BFC5EE', '#E8BBC1'];
   },
 
+
   getCharCode: function () {
     const charCodes = this.profileChar.charCodeAt();
     return charCodes
@@ -21,5 +22,6 @@ export default Component.extend({
 
   getBgColor: computed('avatar_colors', function () {
       return htmlSafe("background: " + this.avatar_colors[this.getCharCode() % this.avatar_colors.length]);
+
   }),
 });
