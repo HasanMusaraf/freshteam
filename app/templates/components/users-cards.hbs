@@ -1,6 +1,6 @@
 <div class="filter">
   <BsDropdown as |dd|>
-    <dd.toggle class="filter-by"><span>Filter by</span><p
+    <dd.toggle class="filter-by" data-test-id="filterby"><span>Filter by</span><p data-test-id="current-team"
         {{action "filterby"}}
       >{{if currentTeam currentTeam "All Employees"}}</p>
       <img
@@ -10,9 +10,9 @@
       />
     </dd.toggle>
     <dd.menu>
-      <li class="team" {{action "isFilter"}}>All Teams</li>
-      {{#each myTeamMembers as |myTeam|}}
-        <li class="filter-table"><button
+      <li class="team" {{action "isFilter"}} data-test-id="all-teams">All Teams</li>
+      {{#each this.myTeamMembers as |myTeam|}}
+        <li class="filter-table"><button data-test-id={{myTeam.team}}
             {{action "isFilter" myTeam.team}}
           >{{myTeam.team}}</button></li>
       {{/each}}
@@ -24,7 +24,7 @@
 
 <div class="sort">
   <BsDropdown as |dd|>
-    <dd.toggle class="filter-by"><span>Sort by</span><p {{action "sortby"}}>{{if
+    <dd.toggle class="filter-by" data-test-id="sortby"><span>Sort by</span><p data-test-id="current-order-type" {{action "sortby"}}>{{if
           sortDisplay
           sortDisplay
           "First Name"
@@ -38,7 +38,7 @@
     <dd.menu>
       <div class="menu">
         {{#each sortArray as |sortType|}}
-          <li><button
+          <li><button data-test-id={{sortType.name}}
               class="sort-table
                 {{if (eq this.selectedValue sortType.name) 'tick'}}"
               {{action "sortFunc" sortType.name sortType.displayName}}
@@ -46,7 +46,7 @@
         {{/each}}
         <div class="dropdown-divider divider"></div>
         {{#each sortOrderArray as |sortOrderType|}}
-          <li><button
+          <li><button data-test-id={{sortOrderType.orderParam}}
               class="sort-method
                 {{if (eq selectedOrder sortOrderType.orderParam) 'tick'}}"
               {{action "sortOrder" sortOrderType.orderParam}}
@@ -59,7 +59,7 @@
 
 {{! Search Bar }}
 
-<div class="search-field">
+<div class="search-field" data-test-id="search">
   {{input
     type="search"
     id="search"
@@ -67,22 +67,20 @@
     key-up="fname"
   }}
   <em>{{svg-jar "search" class="magnifier"}}</em>
-
 </div>
 
 {{! Users Cards }}
 
-<div class="userWrapper">
+<div class="userWrapper" data-test-id="user-cards-wrapper">
   {{#if (gt userList.length 0)}}
     {{#each this.userList as |user|}}
-      <UserCard @user={{user}} />
+      <UserCard @user={{user}} data-test-id="user-card"/>
     {{/each}}
   {{else}}
-    <div class="no-data">
+    <div class="no-data" data-test-id="no-data">
       {{svg-jar "directory" class="user-icon"}}
-      <p class="no-emp"> No employees to list in this view</p>
-      <p class="try-something">Try looking for something less specific </p>
+      <p data-test-id="no-list-view" class="no-emp"> No employees to list in this view</p>
+      <p data-test-id="try-something-msg" class="try-something">Try looking for something less specific </p>
     </div>
   {{/if}}
 </div>
-
