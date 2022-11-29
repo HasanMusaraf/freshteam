@@ -1,18 +1,13 @@
 @import "ember-bootstrap/bootstrap";
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
-body {
-  background: #e5e5e5;
+body{
+    background: #E5E5E5;
 }
 
 @mixin content-wrapper {
   position: absolute;
-  left: 85px;
+  left: 80px;
 }
 
 @import "sub-styles/home.scss";

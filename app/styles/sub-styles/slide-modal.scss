@@ -18,6 +18,11 @@
   justify-content: center;
   align-items: center;
   float: left;
+  cursor: pointer;
+}
+
+.add-emp .close-btn-box:hover {
+  opacity: 0.9;
 }
 
 .add-emp .add-emp-container {

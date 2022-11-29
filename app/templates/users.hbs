@@ -1,8 +1,14 @@
+<header class="subNav">
+  <div class="subNav-tabs">
+    <p>Employees</p>
+  </div>
+</header>
+
+  {{#add-employee-nav }}{{/add-employee-nav}}
+
+  {{outlet}}
+
 <div class="wrapper-users">
-  {{#users-cards}}{{/users-cards}}
+  <UsersCards />
 </div>
 
-{{#add-employee-nav }}{{/add-employee-nav}}
-
-
-{{outlet}}

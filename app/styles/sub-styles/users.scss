@@ -9,21 +9,21 @@
 }
 
 .subNav-tabs {
-  position: absolute;
-  left: 84px;
   display: flex;
   align-items: center;
   height: 54px;
-  width: 100%;
+  margin-left: 84px;
 }
 
 .subNav-tabs p {
+  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   padding-left: 15px;
   color: #12344d;
   margin-top: auto;
 }
+
 
 .subNav-tabs a {
   font-weight: 400;
@@ -39,9 +39,11 @@
   text-decoration: none;
 }
 
+
 .wrapper-users {
   @include content-wrapper;
   top: 120px;
   z-index: -1;
-  display: flex;
 }
+
+
