@@ -151,8 +151,8 @@ module('Integration | Component | users-cards', function(hooks) {
         <UsersCards />
       `);
     
-      await typeIn('[data-test-id="search"] input', 'i');
-      assert.dom('[data-test-id="full-name"]').hasText('Shalini Sivakumar');
+      await typeIn('[data-test-id="search"] input', 'a');
+      assert.dom('[data-test-id="full-name"]').hasText('Aarav Guru');
 
     });
 
