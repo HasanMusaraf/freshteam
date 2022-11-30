@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
-import { computed } from '@ember/object';
+import { computed} from '@ember/object';
 import { htmlSafe } from '@ember/template';
 
 export default Component.extend({
@@ -23,4 +23,6 @@ export default Component.extend({
       return htmlSafe("background: " + this.avatar_colors[this.getCharCode() % this.avatar_colors.length]);
 
   }),
+
+
 });

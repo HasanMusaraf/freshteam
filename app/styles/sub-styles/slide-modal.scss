@@ -84,6 +84,10 @@
 
 // Image Uploader
 
+#file-id{
+  display: none;
+}
+
 .img-uploader {
   position: absolute;
   top: 80px;
@@ -98,8 +102,24 @@
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
+
+.img-uploader .CurrentSelectedImg{
+  width: 90px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.img-uploader .imgClose{
+  width: 15px;
+  fill: #111111;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
 
 .img-uploader-icon .avatar-icon {
   width: 50px;

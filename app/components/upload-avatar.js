@@ -1,4 +1,7 @@
-import Component from '@ember/component';
+import Component from "@ember/component";
 
 export default Component.extend({
+
+  
+
 });
