@@ -1,22 +1,22 @@
 {{!-- NavBar --}}
 
-<header class="side-nav">
-    <div class="side-nav-tabs">
+<header class="side-nav" data-test-id="sideNav">
+    <div class="side-nav-tabs" data-test-id="sideNav-icon">
         {{svg-jar "Shape" class="side-nav-icon" alt="img"}}
     </div>
 
-     <div class="candidates {{if isUserRoute 'active-icon'}}">
-        {{#link-to 'users'}} {{svg-jar "candidates" class="icon" }}
+     <div class="candidates {{if isUserRoute 'active-icon'}}" data-test-id="candidate-icon">
+        {{#link-to 'users' }} {{svg-jar "candidates" class="icon" }}
         {{/link-to}}
     </div>
 </header>
 
 
 
-<header class="topNav ">
-    <div class="top-nav-tabs">
+<header class="topNav" data-test-id="topNav">
+    <div class="top-nav-tabs" data-test-id="topNav-tabs">
         <img src="/assets/images/favicon.ico" class="top-nav-icon" alt="img">
-        <span>Talent Center</span>
+        <span data-test-id="topNav-text">Talent Center</span>
     </div>
 </header>
 
@@ -25,8 +25,6 @@
 
 {{!-- Footer --}}
 
-<footer>
-    <p>HR Software by Freshworks &nbsp;  |  &nbsp; Knowledge Base</p>
+<footer data-test-id="footer">
+    <p data-test-id="footer-text">HR Software by Freshworks &nbsp;  |  &nbsp; Knowledge Base</p>
 </footer>
-
-

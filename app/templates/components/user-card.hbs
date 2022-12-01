@@ -1,5 +1,5 @@
-<div class="userCard">
+<div class="userCard" data-test-id="user-card">
   <UserAvatar @user={{this.user}} /> 
-  <p class="fullName">{{this.user.firstName}} {{this.user.lastName}}</p>
-  <p class="email">{{this.user.email}}</p>
+  <p class="fullName" data-test-id="full-name">{{this.user.firstName}} {{this.user.lastName}}</p>
+  <p class="email" data-test-id="email">{{this.user.email}}</p>
 </div>
