@@ -7,7 +7,7 @@ import hbs from 'htmlbars-inline-precompile';
 module('Integration | Component | nav-listing', function(hooks) {
   setupRenderingTest(hooks);
 
-test('it renders', async function(assert) {
+test('it renders the Nav-Bar', async function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
