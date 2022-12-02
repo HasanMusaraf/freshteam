@@ -1,4 +1,8 @@
 <div class="userCard" data-test-id="user-card">
+  <div class="user-btns">
+  {{#link-to 'users.edit' user.id}}{{svg-jar "edit" class="edit-icon"}}{{/link-to}}
+  {{#link-to 'users.edit' user.id}}{{svg-jar "trash" class="delete-icon"}}{{/link-to}}
+  </div>
   <UserAvatar @user={{this.user}} /> 
   <p class="fullName" data-test-id="full-name">{{this.user.firstName}} {{this.user.lastName}}</p>
   <p class="email" data-test-id="email">{{this.user.email}}</p>

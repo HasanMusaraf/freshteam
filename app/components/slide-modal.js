@@ -12,7 +12,12 @@ export default Component.extend({
       this.model.deleteRecord();
     },
     sendForm: function () {
-      get(this, "onConfirm") && get(this, "onConfirm")();
+      this.set('model.active', true);
+      if (this.model.save()) {
+        alert("User successfully Created");
+        this.router.transitionTo("users");
+      }
+
     },
   },
 });

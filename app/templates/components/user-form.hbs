@@ -22,17 +22,18 @@
     {{input type="text" id="designation" value=model.designation}}
   </div>
 
-  <div>
+  <div data-test-id="dob">
     <label for="ember251">Date of joining</label>
     {{bootstrap-datepicker
       value=model.joiningDate
       format="yyyy-mm-dd"
       todayHighlight=true
       autoclose=true
+      
     }}
   </div>
 
-  <div class="select-team">
+  <div class="select-team" data-test-id="powerSelect">
     <label for="ember300">Team</label>
     <PowerSelect
       @selected={{this.model.team}}

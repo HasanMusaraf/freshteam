@@ -5,7 +5,7 @@ export default DS.Model.extend({
   lastName: DS.attr("string"),
   email: DS.attr("string"),
   team: DS.attr("string"),
-  joiningDate: DS.attr("string"),
+  joiningDate: DS.attr("date"),
   designation: DS.attr("string"),
   image: DS.attr("string"),
   active: DS.attr('boolean', {defaultValue: false})
