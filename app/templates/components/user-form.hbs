@@ -4,22 +4,42 @@
 
   <div data-test-id="firstName">
     <label for="firstName" >First Name<span class="required" >*</span></label>
-    {{input type="text" id="firstName" value=model.firstName }}
+    {{input type="text" id="firstName" value=model.firstName model=model class=(if (and model.validations.attrs.firstName.isInvalid hasValidationFailed)  "inputfield" ) }}
+    {{#if hasValidationFailed}}
+        <div class="error">
+            {{v-get model 'firstName' 'message'}}
+        </div>
+    {{/if}}
   </div>
 
   <div data-test-id="lastName">
     <label for="lastName">Last Name<span class="required">*</span></label>
-    {{input type="text" id="lastName" value=model.lastName}}
+    {{input type="text" id="lastName" value=model.lastName class=(if (and model.validations.attrs.lastName.isInvalid hasValidationFailed)  "inputfield" )}}
+    {{#if hasValidationFailed}}
+        <div class="error">
+            {{v-get model 'lastName' 'message'}}
+        </div>
+    {{/if}}
   </div>
 
   <div data-test-id="email">
     <label for="email">Email<span class="required">*</span></label>
-    {{input type="text" id="email" value=model.email}}
+    {{input type="text" id="email" value=model.email model=model class=(if (and model.validations.attrs.email.isInvalid hasValidationFailed)  "inputfield" )}}
+    {{#if hasValidationFailed}}
+        <div class="error">
+            {{v-get model 'email' 'message'}}
+        </div>
+    {{/if}}
   </div>
 
   <div data-test-id="designation">
     <label for="designation">Designation</label>
-    {{input type="text" id="designation" value=model.designation}}
+    {{input type="text" id="designation" value=model.designation class=(if (and model.validations.attrs.designation.isInvalid hasValidationFailed)  "inputfield" )}}
+    {{#if hasValidationFailed}}
+        <div class="error">
+            {{v-get model 'designation' 'message'}}
+        </div>
+    {{/if}}
   </div>
 
   <div>

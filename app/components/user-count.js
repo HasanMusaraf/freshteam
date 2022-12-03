@@ -7,7 +7,7 @@ export default Component.extend({
 
   userLists: computed('getAllUsers.isFulfilled', function (){
     if (this.getAllUsers.isFulfilled) {
-      return this.getAllUsers.sortBy('firstName').filterBy('active', true);
+      return this.getAllUsers.sortBy('firstName').filterBy('active', true).rejectBy('firstName',null);
     }
   }),
 

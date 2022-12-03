@@ -32,3 +32,12 @@ body {
 @import "sub-styles/user-form.scss";
 
 @import "ember-power-select";
+
+.inputfield {
+  border-color: rgba(215, 45, 48, 1) !important;
+}
+
+.error{
+  color: rgba(215, 45, 48, 1);
+  font-size: 14px;
+}

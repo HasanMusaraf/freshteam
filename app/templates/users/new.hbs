@@ -1,2 +1,3 @@
-<AddUser @model={{this.model}}/>
-
+{{#slide-modal model=model hasValidationFailed=hasValidationFailed }}
+  {{#user-form model=model hasValidationFailed=hasValidationFailed}}{{/user-form}}
+{{/slide-modal}}

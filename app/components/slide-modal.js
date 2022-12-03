@@ -1,6 +1,5 @@
 import Component from "@ember/component";
 import { inject as service } from "@ember/service";
-import { get } from "@ember/object";
 
 export default Component.extend({
   router: service(),
@@ -11,8 +10,20 @@ export default Component.extend({
       this.router.transitionTo("users");
       this.model.deleteRecord();
     },
-    sendForm: function () {
-      get(this, "onConfirm") && get(this, "onConfirm")();
-    },
+
+    save: function(){
+      this.set('model.active', true);
+      let user = this.get('model');
+       user.validate().then(
+
+        ({ validations }) => {
+          if (validations.get('isValid')) {
+            user.save();
+          } else {
+            this.set('hasValidationFailed',true)
+          }
+        })
+    }
+
   },
 });
