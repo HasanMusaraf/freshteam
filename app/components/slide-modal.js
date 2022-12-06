@@ -1,6 +1,5 @@
-import Component from "@ember/component";
-import { inject as service } from "@ember/service";
-import { get } from "@ember/object";
+import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
   router: service(),
@@ -8,14 +7,14 @@ export default Component.extend({
 
   actions: {
     close: async function () {
-      this.router.transitionTo("users");
+      this.router.transitionTo('users');
       this.model.deleteRecord();
     },
     sendForm: function () {
       this.set('model.active', true);
       if (this.model.save()) {
-        alert("User successfully Created");
-        this.router.transitionTo("users");
+        alert('User successfully Created');
+        this.router.transitionTo('users');
       }
 
     },

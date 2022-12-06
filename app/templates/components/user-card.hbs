@@ -1,9 +1,24 @@
 <div class="userCard" data-test-id="user-card">
+  
   <div class="user-btns">
-  {{#link-to 'users.edit' user.id}}{{svg-jar "edit" class="edit-icon"}}{{/link-to}}
-  {{#link-to 'users.edit' user.id}}{{svg-jar "trash" class="delete-icon"}}{{/link-to}}
+    {{#link-to 'users.edit' user.id}}{{svg-jar "edit" data-test-id="edit-icon" class="edit-icon"}}{{/link-to}}
+    <button class="delete-icon" data-test-id="delete-icon" {{action 'deleteEmployee'}}>{{svg-jar "trash"  }}</button>
   </div>
-  <UserAvatar @user={{this.user}} /> 
+
+  <BsModal @open={{this.deleteConfirmation}} @onSubmit={{action "submit" user.id}} as |Modal|>
+    <Modal.body>
+      <span class="delete-exclamation">{{svg-jar  "exclamation-circle" class="exclamation-icon"}}</span>
+      <span class="confirmation-text">Do you wish to remove this employee from {{this.user.team}}</span>
+      <div class="modal-btns">
+      <BsButton  @onClick={{action Modal.close}} class="cancel-btn" >Cancel</BsButton>
+      <BsButton @onClick={{action Modal.submit}} class="save-btn">Save</BsButton>
+      </div>
+    </Modal.body>
+  </BsModal>
+
+
+  <UserAvatar @user={{user}} />
   <p class="fullName" data-test-id="full-name">{{this.user.firstName}} {{this.user.lastName}}</p>
   <p class="email" data-test-id="email">{{this.user.email}}</p>
 </div>
+

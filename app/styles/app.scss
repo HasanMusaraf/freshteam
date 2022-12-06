@@ -32,3 +32,53 @@ body {
 @import "sub-styles/user-form.scss";
 
 @import "ember-power-select";
+
+
+.modal-content{
+  width: 604px;
+  height: 86px;
+}
+
+.confirmation-text{
+  font-size: 14px;
+  color: rgba(18, 52, 77, 1);
+  width: 327px;
+  position: absolute;
+  left: 69px;
+  top: 22px;
+}
+
+
+.cancel-btn{
+  background-color: white !important;
+  color: rgba(18, 52, 77, 1);
+  font-size: 14px;
+  border: none;
+}
+
+.cancel-btn:hover{
+  background-color: none !important;
+  color: rgba(18, 52, 77, 1);
+}
+
+.save-btn{
+  background-color: rgba(18, 52, 77, 1) !important;
+  color: white;
+  font-size: 14px;
+  border: none;
+}
+
+.delete-exclamation .exclamation-icon{
+  width: 30px ;
+  fill: rgba(232, 111, 37, 1);
+  position: absolute;
+  left: 26px;
+  top: 24px;
+}
+
+
+.modal-btns{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}

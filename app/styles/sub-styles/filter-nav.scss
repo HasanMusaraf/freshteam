@@ -53,12 +53,10 @@
 }
 
 .filter .team {
-  padding-top: 5px;
   font-size: 15px;
   font-weight: 500;
-  cursor: default;
-  position: relative;
-  right: 12px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .filter-table {
@@ -70,7 +68,12 @@
   opacity: 0.8;
 }
 
-.filter-table:hover {
+.filter-table button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.filter-table button:hover {
   color: #2752b0;
 }
 
@@ -79,12 +82,6 @@
 .sort {
   position: absolute;
   left: 283px;
-}
-
-.divider {
-  width: 212px;
-  position: relative;
-  right: 10px;
 }
 
 .sort .dropdown-menu {
@@ -109,6 +106,8 @@
   display: flex;
   align-items: center;
   padding: 6px 28px 6px 10px;
+  border: none;
+  background-color: #ffffff;
 }
 
 .sort-method {
@@ -122,6 +121,8 @@
   display: flex;
   align-items: center;
   padding: 6px 28px 6px 10px;
+  border: none;
+  background-color: #ffffff;
 }
 
 .sort-method:hover {
@@ -143,7 +144,6 @@
   float: right;
   padding: 0 25px 11px 0;
   position: relative;
-  
 }
 
 .search-field input {
@@ -151,28 +151,27 @@
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #dadee4;
-  outline-style:none;
+  outline-style: none;
   border-radius: 2px;
   padding-left: 29px;
   font-size: 14px;
 }
 
-.search-field input:hover{
+.search-field input:hover {
   border: 1px solid #475867;
 }
 
-.search-field input:focus{
+.search-field input:focus {
   border: 2px solid #2c5cc5;
-
 }
 
- .search-field input::-webkit-input-placeholder{
-  opacity: .3;
+.search-field input::-webkit-input-placeholder {
+  opacity: 0.3;
 }
 
-.search-field input::-webkit-search-cancel-button{
+.search-field input::-webkit-search-cancel-button {
   padding-right: 5px;
-  font-size:15px;
+  font-size: 15px;
   opacity: 0.7;
   cursor: pointer;
 }
