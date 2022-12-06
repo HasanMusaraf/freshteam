@@ -8,6 +8,6 @@ export default Component.extend({
   router: service(),
 
   isUserRoute: computed('router.currentRouteName', function () {
-     return get(this, 'router.currentRouteName') === 'users';
+     return get(this, 'router.currentRouteName') === 'users.index' || get(this, 'router.currentRouteName') == 'users.new';
   }),
 });

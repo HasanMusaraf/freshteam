@@ -47,29 +47,28 @@
 
 .filter .dropdown-menu {
   background-color: #ffffff;
-  width: 120px;
   border-radius: 4px;
   text-align: center;
+  min-width: 135px;
+  padding: 15px 0 15px 0;
 }
 
 
 .filter .team {
   font-size: 15px;
   font-weight: 500;
-  margin-top: 10px;
   cursor: pointer;
+  opacity: .8;
 }
 
-.filter-table {
+
+
+.filter-table button{
   padding-top: 10px;
   font-weight: 400;
   font-size: 14px;
   color: #12344d;
   opacity: .8;
-}
-
-
-.filter-table button{
   border: none;
   background-color: #ffffff;
 }
@@ -163,19 +162,21 @@
   border-radius: 2px;
   padding-left: 29px;
   font-size: 14px;
+  padding-bottom: 4px;
 }
 
 .search-field input:hover{
-  border: 1px solid #475867;
+  border: 1px solid rgba(71, 88, 103,0.8);
 }
 
 .search-field input:focus{
-  border: 2px solid #2c5cc5;
+  border: 2px solid rgba(44, 92, 197,0.7);
 
 }
 
  .search-field input::-webkit-input-placeholder{
   opacity: .3;
+  font-size: 14px;
 }
 
 .search-field input::-webkit-search-cancel-button{
@@ -192,5 +193,6 @@
   left: 10.43px;
   top: 8px;
   fill: #000000;
+  opacity: 0.7;
 }
 

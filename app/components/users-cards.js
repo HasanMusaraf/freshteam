@@ -37,7 +37,7 @@ export default Component.extend({
 
   myTeamMembers: computed('allUsers.isFulfilled', function () {
     if (this.allUsers.isFulfilled) {
-      return this.allUsers.uniqBy('team');
+      return this.allUsers.rejectBy('team',null).uniqBy('team');
     }
   }),
 

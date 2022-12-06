@@ -22,6 +22,5 @@ export default Component.extend({
 
   getBgColor: computed('avatar_colors', function () {
       return htmlSafe("background: " + this.avatar_colors[this.getCharCode() % this.avatar_colors.length]);
-
   }),
 });
